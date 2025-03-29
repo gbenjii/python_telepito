@@ -2,5 +2,7 @@
 python telepito
 
 hasznalt libraryk
+
 time
+
 sys
