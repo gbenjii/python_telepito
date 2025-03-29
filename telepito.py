@@ -2,7 +2,7 @@ import time
 import sys
 verzio_lista = "1 2"
 print("Hello ez a Benji telepítő!")
-time.sleep(2)
+time.sleep(1)
 while True:
     bemenet = input("Folytatni kívánja a letöltést? igen vagy nem?: ")
     if bemenet == "igen":
@@ -25,8 +25,16 @@ while True:
         print("Ön az első verziót válaszottta hamarosan megkezdődik a letöltés!")
         time.sleep(2)
         print("Az első verzó letöltés alatt")
+        time.sleep(5)
+        print("A letöltés kész!")
+        time.sleep(2)
+        sys.exit()
     elif bemenet.lower() == "2":
         print("Ön a második verziót válaszottta hamarosan megkezdődik a letöltés!")
         print("A második verzó letöltés alatt")
+        time.sleep(5)
+        print("A letöltés kész!")
+        time.sleep(2)
+        sys.exit()
     else:
         print("Csak 1 vagy 2 értéket lehet megadni! Próbáld újra.")
