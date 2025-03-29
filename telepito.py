@@ -1,5 +1,9 @@
 import time
 import sys
+import requests
+import os
+from bs4 import BeautifulSoup
+import re
 verzio_lista = "1 2"
 print("Hello ez a Benji telepítő!")
 time.sleep(1)
@@ -9,17 +13,16 @@ while True:
         print("Egy pillanat múlva folyatatódik a telepítés!")
         break
     elif bemenet == "nem":
-        print("A telepítés nem sikerült az ablak 3 másodpercmúlva bezáródik!")
+        print("A telepítés nem sikerült az ablak 3 másodperc múlva bezáródik!")
         time.sleep(3)
         sys.exit()
     else:
         print("Csak pontosan igen vagy nem írható írható! Próbáld újra.")
-
 time.sleep(1)
-print ("Kérlek válassz egy verziót ezek közül: ")
-time.sleep(1)
-print(verzio_lista)
 while True:
+    print("Elérhető verziók:")
+    print(verzio_lista)
+    time.sleep(1)
     bemenet = input("Kérem, írja be hogy melyik verziót szeretné letölteni: ")
     if bemenet.lower() == "1":
         print("Ön az első verziót válaszottta hamarosan megkezdődik a letöltés!")
