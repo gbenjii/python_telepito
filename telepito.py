@@ -1,9 +1,5 @@
 import time
 import sys
-import requests
-import os
-from bs4 import BeautifulSoup
-import re
 verzio_lista = "1 2"
 print("Hello ez a Benji telepítő!")
 time.sleep(1)
@@ -22,7 +18,7 @@ time.sleep(1)
 while True:
     print("Elérhető verziók:")
     print(verzio_lista)
-    time.sleep(1)
+    time.sleep()
     bemenet = input("Kérem, írja be hogy melyik verziót szeretné letölteni: ")
     if bemenet.lower() == "1":
         print("Ön az első verziót válaszottta hamarosan megkezdődik a letöltés!")
